@@ -34,7 +34,10 @@ def hit?(total)
   if decision == 'h'
     total += deal_card
   else if decision !== 'h' && decision !== 's'
-    
+    puts "Please enter a valid command"
+    prompt_user
+  end
+  total
 end
 
 def invalid_command
