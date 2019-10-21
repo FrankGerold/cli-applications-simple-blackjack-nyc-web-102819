@@ -29,6 +29,10 @@ def initial_round
   card
 end
 
+def invalid_command
+    puts "Please enter a valid command"
+end
+
 def hit?(total)
   prompt_user
   decision = get_user_input
@@ -39,10 +43,6 @@ def hit?(total)
     prompt_user
   end
   total
-end
-
-def invalid_command
-    puts "Please enter a valid command"
 end
 
 #####################################################
