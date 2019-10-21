@@ -40,7 +40,7 @@ def hit?(total)
     total += deal_card
   else if decision != 'h' && decision != 's'
     invalid_command
-    hit?
+    hit?(total)
   end
   total
 end
