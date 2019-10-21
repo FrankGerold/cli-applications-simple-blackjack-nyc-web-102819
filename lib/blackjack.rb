@@ -38,12 +38,11 @@ def hit?(total)
   decision = get_user_input
   if decision == 'h'
     total += deal_card
-  else if decision != 'h' && decision != 's'
+  elsif decision != 'h' && decision != 's'
     invalid_command
     hit?(total)
   end
   total
-end
 end
 #####################################################
 # get every test to pass before coding runner below #
